@@ -1,7 +1,7 @@
 import { useState, /* useContext */ } from "react";
 
 import FormInput from "../form-input/form-input.component";
-import Button from '../button/button.component';
+import Button, { BUTTON_TYPES_CLASSES } from '../button/button.component';
 //import { UserContext } from "../../contexts/user.context";
 
 import './sign-in-form.styles.scss'
@@ -94,7 +94,13 @@ const SignInForm = () => {
                     value={password}/>
                 <div className="buttons-container">
                     <Button type="submit">Sign In</Button>
-                    <Button type='button' buttonType={'google'} onClick={signInWithGoogle}>Google sign in</Button>
+                    <Button 
+                        type='button' 
+                        buttonType={BUTTON_TYPES_CLASSES.google} 
+                        onClick={signInWithGoogle}
+                    >
+                        Google sign in
+                    </Button>
                 </div>
 
             </form>
