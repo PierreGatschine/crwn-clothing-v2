@@ -1,4 +1,4 @@
-.category-container  {
+.directory-item-container  {
   min-width: 30%;
   height: 240px;
   flex: 1 1 auto;
@@ -18,7 +18,7 @@
       transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
     }
 
-    & .category-body-container {
+    & .body {
       opacity: 0.9;
     }
   }
@@ -42,7 +42,7 @@
     background-position: center;
   }
 
-  .category-body-container {
+  .body {
     height: 90px;
     padding: 0 25px;
     display: flex;
@@ -56,9 +56,9 @@
     position: absolute;
 
     h2 {
-      font-weight: bold;
+      font-weight: 700;
       margin: 0 6px 0;
-      font-size: 22px;
+      font-size: 1.5rem;
       color: #4a4a4a;
       //text-transform: uppercase;
     }
